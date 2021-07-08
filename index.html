@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>掌閱精選</title>
+<link href="css.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <img src="image/BG.png">
+        <SCRIPT LANGUAGE="JavaScript">  
+            function openani(){  
+            document.getElementById('bookani').style.display = "block";  
+            }  
+            </SCRIPT> 
+        <div class="video" onclick="openani()">
+               <video  width="450" height="300" src="Comp 1.mp4"  preload="auto" onclick="this.play()" ></video> 
+        </div>
+
+        <div id="bookani">
+            
+            <div class="book1" >
+                <img id="book1" src="image/book01.png">
+            </div>
+      
+        
+            <div class="book2" >
+                <img id="book2" src="image/book02.png">
+            </div>
+       
+       
+            <div class="book3" >
+                <img  id="book3" src="image/book03.png">
+            </div>
+       
+        
+            <div class="book4" >
+                <img id="book4" src="image/book04.png">
+            </div>
+        
+       
+            <div class="notice" onclick="reP()">
+            <p>覺得實體書占空間又難攜帶嗎？</p>
+            
+            </div>
+            <div class="notice-L" onclick="reP()" >
+                <p>想要隨時隨地閱讀書籍嗎？</p></div>
+    
+    
+    </div>
+    <SCRIPT LANGUAGE="JavaScript">  
+        function reP(){  
+        document.getElementById('phone').style.display = "block"; 
+        }  
+        </SCRIPT> 
+
+    <div  id="phone" onclick="small()">
+        <div id="Pwrap">          
+         <div id="home" onclick="webIn()"><p id="Hnotice">click!</p></div>
+        <img id="Pani" src="image/phone.png" >
+        </div>
+        <div id="Fin"> 
+            
+            <div id="screen">
+             <img id="web" src="image/web.png">               
+            </div>
+            <div id="finger"><img src="image/finger.png"></div>
+            <div class="notice2" id="notice2" onclick="lastsince()"><p>更多精選好書帶著走?</p></div>
+         </div>
+    </div>
+   
+    <SCRIPT LANGUAGE="JavaScript">  
+        function small(){  
+        document.getElementById('home').style.display = "block";
+        document.getElementById('bookani').className = 'classname';
+        document.getElementById('Pani').className = 'phoneani';
+        }  
+        </SCRIPT>  
+
+         <SCRIPT LANGUAGE="JavaScript">  
+            function webIn(){  
+                document.getElementById('Fin').style.display = "block";
+                document.getElementById('Hnotice').style.display = "none";
+                
+            }  
+            </SCRIPT>  
+
+            <div id="lastBg">
+                <a href="http://select.zhangyue.com" target="_block" ><img src="image/LOGO.png"></a>
+                
+            </div>
+            <SCRIPT LANGUAGE="JavaScript">  
+                function lastsince(){  
+                    document.getElementById('lastBg').style.display = "block";
+                    document.getElementById('phone').style.display = "none";
+                    
+                }  
+                </SCRIPT>  
+    </div>
+
+</body>
+</html>
